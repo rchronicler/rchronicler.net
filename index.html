@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
     <!-- Primary Meta Tags -->
     <title>Dimas Andrian</title>
     <meta name="title" content="Dimas Andrian" />
@@ -32,6 +31,12 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 10px;
         }
 
         .bg-gray {
@@ -49,7 +54,6 @@
         .btn-primary {
             border: 0px;
             padding: 5px;
-            /* border-radius: 10px; */
         }
 
         .btn-primary:hover {
@@ -60,18 +64,24 @@
         .btn-primary:active {
             background-color: #e0e0e0;
         }
+
+        .over-x {
+            overflow-x: auto;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Dimas Andrian 🙀</h1>
+        <br>
     </header>
     <main>
         <p>Hi, send me an email to <a href="mailto:dimas@gnuweeb.org">dimas@gnuweeb.org</a>.</p>
+        <br>
         <button class="btn-primary" onclick="copyPublicKey()">click to copy</button>
     </main>
-    <section>
+    <section class="over-x">
         <pre class="bg-gray inline-block p-5">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -151,6 +161,7 @@ vehW1lvVp4KMtSVAbuY=
 -----END PGP PUBLIC KEY BLOCK-----</pre>
     </section>
     <footer>
+        <br>
         <p>Thanks.</p>
     </footer>
     <script>
